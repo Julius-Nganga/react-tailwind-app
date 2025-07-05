@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTheme } from '../context/ThemeContext';
-import Button from '../components/button';
+import Button from './button';
 
 const ThemeSwitcher = () => {
   const { theme, toggleTheme } = useTheme();
