@@ -1,11 +1,14 @@
+// vite.config.js
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import tailwindcss from '@tailwindcss/vite';
 
-const REPO_NAME = 'react-tailwind-app';
+// IMPORTANT: Replace 'react-tailwind-app' with the actual name of your GitHub repository.
+// For example, if your repo is 'my-personal-website', then REPO_NAME = 'my-personal-website';
+const REPO_NAME = 'react-tailwind-app'; // Assuming your repository is named 'react-tailwind-app'
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), tailwindcss()],
-  base: `/${react-tailwind-app}/`,
+  plugins: [react()],
+  base: `/${REPO_NAME}/`, // Set the base path for GitHub Pages
+  
+  
 });
