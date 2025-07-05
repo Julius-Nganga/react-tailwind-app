@@ -6,6 +6,6 @@ const REPO_NAME = 'react-tailwind-app';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), tailwindcss()]
-           
+  plugins: [react(), tailwindcss()],
+  base: `/${REPO_NAME}/`,
 });
