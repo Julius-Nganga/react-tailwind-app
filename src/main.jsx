@@ -7,7 +7,7 @@ import { ThemeProvider } from "./context/ThemeContext.jsx";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Router>
+    <Router basename="react-tailwind-app">
       <ThemeProvider>
         <App />
       </ThemeProvider>
